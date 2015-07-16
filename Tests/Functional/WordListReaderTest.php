@@ -15,4 +15,11 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase {
 	protected function setUp() {
 		$this->subject = new WordListReader();
 	}
+
+	/**
+	 * @test
+	 */
+	public function thereAreNoTests() {
+		self::markTestIncomplete('To be done.');
+	}
 }

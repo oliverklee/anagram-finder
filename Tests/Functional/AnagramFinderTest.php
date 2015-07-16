@@ -15,4 +15,11 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase {
 	protected function setUp() {
 		$this->subject = new AnagramFinder();
 	}
+
+	/**
+	 * @test
+	 */
+	public function thereAreNoTests() {
+		self::markTestIncomplete('To be done.');
+	}
 }
