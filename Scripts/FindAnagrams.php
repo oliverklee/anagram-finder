@@ -8,7 +8,6 @@ $words = $wordListReader->read(__DIR__ . '/../Resources/Private/Dictionaries/bri
 $anagramFinder = new \OliverKlee\CodeKata\AnagramFinder();
 $anagrams = $anagramFinder->findAnagrams($words);
 
-//var_dump($anagrams);
 foreach ($anagrams as $anagram) {
 	echo implode(', ', $anagram) . "\n";
 }
