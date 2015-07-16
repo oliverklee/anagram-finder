@@ -19,7 +19,40 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase {
 	/**
 	 * @test
 	 */
-	public function thereAreNoTests() {
-		self::markTestIncomplete('To be done.');
+	public function findAnagramsForEmptyArrayReturnsEmptyArray() {
+		self::assertSame(
+			array(),
+			$this->subject->findAnagrams(array())
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function findAnagramsForArrayWithOneWordsReturnsEmptyArray() {
+		self::assertSame(
+			array(),
+			$this->subject->findAnagrams(array('iphone'))
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function findAnagramsForArrayWithTwoNonAgramsReturnsEmptyArray() {
+		self::assertSame(
+			array(),
+			$this->subject->findAnagrams(array('ios', 'android'))
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords() {
+		self::assertSame(
+			array(array('one', 'neo')),
+			$this->subject->findAnagrams(array('one', 'neo'))
+		);
 	}
 }
