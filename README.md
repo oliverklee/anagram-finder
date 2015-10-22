@@ -3,6 +3,16 @@
 This tool is the result of an exercise (code kata, coding dojo) for test-driven
 development (TDD) for PHP using PHPUnit at Oliver Klee's workshops.
 
+An anagram is pair of two words that consist of exactly the same letters, but
+in different order.
+
+Example: anthologise, theologians
+
+
+## Installation
+
+Run `composer install` to install the required Composer packages.
+
 
 ## How to run it
 
