@@ -1,5 +1,7 @@
 # Anagram finder
 
+[![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Fanagram-finder)
+
 This tool is the result of an exercise (code kata, coding dojo) for test-driven
 development (TDD) for PHP using PHPUnit at Oliver Klee's workshops.
 
