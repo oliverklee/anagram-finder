@@ -17,12 +17,12 @@ class AnagramFinder
         $sorter = new CharacterSorter();
 
         /** @var string[][] $potentialAnagrams */
-        $potentialAnagrams = array();
+        $potentialAnagrams = [];
 
         foreach ($words as $word) {
             $sortedCharacters = $sorter->sort($word);
             if (!isset($potentialAnagrams[$sortedCharacters])) {
-                $potentialAnagrams[$sortedCharacters] = array();
+                $potentialAnagrams[$sortedCharacters] = [];
             }
             $potentialAnagrams[$sortedCharacters][] = $word;
         }
