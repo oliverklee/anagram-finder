@@ -9,5 +9,5 @@ $anagramFinder = new \OliverKlee\CodeKata\AnagramFinder();
 $anagrams = $anagramFinder->findAnagrams($words);
 
 foreach ($anagrams as $anagram) {
-	echo implode(', ', $anagram) . "\n";
+    echo implode(', ', $anagram) . "\n";
 }
