@@ -25,8 +25,8 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase
     public function findAnagramsForEmptyArrayReturnsEmptyArray()
     {
         self::assertSame(
-            array(),
-            $this->subject->findAnagrams(array())
+            [],
+            $this->subject->findAnagrams([])
         );
     }
 
@@ -36,8 +36,8 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase
     public function findAnagramsForArrayWithOneWordsReturnsEmptyArray()
     {
         self::assertSame(
-            array(),
-            $this->subject->findAnagrams(array('iphone'))
+            [],
+            $this->subject->findAnagrams(['iphone'])
         );
     }
 
@@ -47,8 +47,8 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase
     public function findAnagramsForArrayWithTwoNonAgramsReturnsEmptyArray()
     {
         self::assertSame(
-            array(),
-            $this->subject->findAnagrams(array('ios', 'android'))
+            [],
+            $this->subject->findAnagrams(['ios', 'android'])
         );
     }
 
@@ -57,9 +57,11 @@ class AnagramFinderTest extends \PHPUnit_Framework_TestCase
      */
     public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords()
     {
+        $anagrams = ['one', 'neo'];
+
         self::assertSame(
-            array(array('one', 'neo')),
-            $this->subject->findAnagrams(array('one', 'neo'))
+            [$anagrams],
+            $this->subject->findAnagrams($anagrams)
         );
     }
 }

@@ -25,8 +25,8 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readForEmptyFileReturnsEmptyArray()
     {
         self::assertSame(
-            array(),
-            $this->subject->read(__DIR__.'/Fixtures/empty.txt')
+            [],
+            $this->subject->read(__DIR__ . '/Fixtures/empty.txt')
         );
     }
 
@@ -36,7 +36,7 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
      */
     public function readForNonexistentFileThrowsException()
     {
-        $this->subject->read(__DIR__.'/Fixtures/nothing-here.txt');
+        $this->subject->read(__DIR__ . '/Fixtures/nothing-here.txt');
     }
 
     /**
@@ -45,10 +45,10 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readForOnlyOneWordInFileReturnsArraWithJustOneWord()
     {
         self::assertSame(
-            array(
+            [
                 'one',
-            ),
-            $this->subject->read(__DIR__.'/Fixtures/oneWord.txt')
+            ],
+            $this->subject->read(__DIR__ . '/Fixtures/oneWord.txt')
         );
     }
 
@@ -58,11 +58,11 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readForTwoWordsInFileReturnsTheTwoWords()
     {
         self::assertSame(
-            array(
+            [
                 'one',
                 'two',
-            ),
-            $this->subject->read(__DIR__.'/Fixtures/twoWords.txt')
+            ],
+            $this->subject->read(__DIR__ . '/Fixtures/twoWords.txt')
         );
     }
 
@@ -72,10 +72,10 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readForEmptyLineAtTheEndIsRemoved()
     {
         self::assertSame(
-            array(
+            [
                 'one',
-            ),
-            $this->subject->read(__DIR__.'/Fixtures/oneWordWithEmptyLineAtTheEnd.txt')
+            ],
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineAtTheEnd.txt')
         );
     }
 
@@ -85,11 +85,11 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readForEmptyLineInsideIsRemoved()
     {
         self::assertSame(
-            array(
+            [
                 'one',
                 'two',
-            ),
-            $this->subject->read(__DIR__.'/Fixtures/oneWordWithEmptyLineInside.txt')
+            ],
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineInside.txt')
         );
     }
 
@@ -99,9 +99,9 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
     public function readIgnoresWordsWithApostrophe()
     {
         self::assertSame(
-            array(
-            ),
-            $this->subject->read(__DIR__.'/Fixtures/oneWordWithApostrophe.txt')
+            [
+            ],
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithApostrophe.txt')
         );
     }
 }
