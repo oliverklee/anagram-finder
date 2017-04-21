@@ -54,3 +54,5 @@ I also frequently give workshops at the TYPO3 Developer Days.
   is my starting point for demonstrating TDD
 * [Tea example](https://github.com/oliverklee/ext_tea)
   for unit tests for extbase extensions for TYPO3 CMS
+* [TDD Seed](https://github.com/oliverklee/tdd-seed)
+  for starting PHPUnit projects with Composer (without TYPO3 CMS)
