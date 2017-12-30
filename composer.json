@@ -1,5 +1,6 @@
 {
-    "name": "oliverklee/code-kata-t3dd15",
+    "name": "oliverklee/anagram-finder",
+    "description": "A tool for finding anagrams from a list of words (as an exercise of test-driven development).",
     "authors": [
         {
             "name": "Oliver Klee",
