@@ -1,6 +1,10 @@
 # Anagram finder
 
-[![Flattr this git repo](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=45y2xw&url=https%3A%2F%2Fgithub.com%2Foliverklee%2Fanagram-finder)
+[![Build Status](https://travis-ci.org/oliverklee/anagram-finder.svg?branch=master)](https://travis-ci.org/oliverklee/anagram-finder)
+[![Latest Stable Version](https://poser.pugx.org/oliverklee/anagram-finder/v/stable.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
+[![Total Downloads](https://poser.pugx.org/oliverklee/anagram-finder/downloads.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
+[![Latest Unstable Version](https://poser.pugx.org/oliverklee/anagram-finder/v/unstable.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
+[![License](https://poser.pugx.org/oliverklee/anagram-finder/license.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
 
 This tool is the result of an exercise (code kata, coding dojo) for test-driven
 development (TDD) for PHP using PHPUnit at Oliver Klee's workshops.
