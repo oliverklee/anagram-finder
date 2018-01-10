@@ -16,7 +16,7 @@ before_install:
 - phpenv config-rm xdebug.ini
 
 install:
-  - composer install
+- composer install
 
 script:
   # Run PHP lint on all PHP files.
