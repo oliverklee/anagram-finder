@@ -1,19 +1,42 @@
 {
     "name": "oliverklee/anagram-finder",
     "description": "A tool for finding anagrams from a list of words (as an exercise of test-driven development).",
-    "license": "GPL-3.0+",
+    "type": "project",
+    "keywords": [
+        "tdd",
+        "kata",
+        "example",
+        "exercise",
+        "anagrams"
+    ],
+    "homepage": "https://github.com/oliverklee/tdd-reader",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Oliver Klee",
-            "email": "typo3-coding@oliverklee.de"
+            "email": "typo3-coding@oliverklee.de",
+            "homepage": "https://www.oliverklee.de/",
+            "role": "developer"
         }
     ],
+    "support": {
+        "source": "https://github.com/oliverklee/anagram-finder",
+        "issues": "https://github.com/oliverklee/anagram-finder/issues"
+    },
+    "require": {
+        "php": "~7.0.0 || ~7.1.0 || ~7.2.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "~4.8.0"
     },
     "autoload": {
         "psr-4": {
             "OliverKlee\\CodeKata\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OliverKlee\\CodeKata\\Tests\\": "Tests/"
         }
     }
 }
