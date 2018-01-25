@@ -40,6 +40,12 @@
         }
     },
     "scripts": {
-        "php-lint": "find Classes/ Scripts/ Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l"
+        "ci:php": "find Classes/ Scripts/ Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+        "ci:static": [
+            "@ci:php"
+        ],
+        "ci": [
+            "@ci:static"
+        ]
     }
 }
