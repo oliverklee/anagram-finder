@@ -41,11 +41,21 @@
     },
     "scripts": {
         "ci:php:lint": "find Classes/ Scripts/ Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+        "ci:tests:unit": "phpunit Tests/Unit/",
+        "ci:tests:functional": "phpunit Tests/Functional/",
+        "ci:tests": [
+            "@ci:tests:unit",
+            "@ci:tests:functional"
+        ],
         "ci:static": [
             "@ci:php:lint"
         ],
+        "ci:dynamic": [
+            "@ci:tests"
+        ],
         "ci": [
-            "@ci:static"
+            "@ci:static",
+            "@ci:dynamic"
         ]
     }
 }
