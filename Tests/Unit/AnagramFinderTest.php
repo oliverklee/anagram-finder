@@ -3,11 +3,12 @@
 namespace OliverKlee\CodeKata\Tests\Unit;
 
 use OliverKlee\CodeKata\AnagramFinder;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Testcase.
  */
-class AnagramFinderTest extends \PHPUnit_Framework_TestCase
+class AnagramFinderTest extends TestCase
 {
     /**
      * @var AnagramFinder
