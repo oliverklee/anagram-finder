@@ -21,7 +21,7 @@ Run `composer install` to install the required Composer packages.
 ## How to run it
 
 ```bash
-Scripts/FindAnagrams.php
+bin/FindAnagrams.php
 ```
 
 ## The exercises
