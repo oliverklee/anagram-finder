@@ -11,8 +11,6 @@ use RuntimeException;
 class WordListReader
 {
     /**
-     * @param string $fileName
-     *
      * @return string[]
      */
     public function read(string $fileName): array

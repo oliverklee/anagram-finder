@@ -102,8 +102,7 @@ class WordListReaderTest extends TestCase
     public function readIgnoresWordsWithApostrophe(): void
     {
         self::assertSame(
-            [
-            ],
+            [],
             $this->subject->read(__DIR__ . '/Fixtures/oneWordWithApostrophe.txt')
         );
     }
