@@ -6,7 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
-- #1 Composer script for PHP linting
+- Use GitHub Actions for CI (#7)
+- Composer script for PHP linting (#1)
 
 ### Changed
 
