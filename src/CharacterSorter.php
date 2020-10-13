@@ -8,11 +8,6 @@ namespace OliverKlee\CodeKata;
  */
 class CharacterSorter
 {
-    /**
-     * @param string $unsortedString
-     *
-     * @return string
-     */
     public function sort(string $unsortedString): string
     {
         $explodedString = str_split($unsortedString);
