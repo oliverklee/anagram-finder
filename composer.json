@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OliverKlee\\CodeKata\\": "Classes/"
+            "OliverKlee\\CodeKata\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OliverKlee\\CodeKata\\Tests\\": "Tests/"
+            "OliverKlee\\CodeKata\\Tests\\": "tests/"
         }
     },
     "prefer-stable": true,
@@ -50,9 +50,9 @@
         "sort-packages": true
     },
     "scripts": {
-        "ci:php:lint": "find Classes/ Scripts/ Tests/ -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-        "ci:tests:unit": "phpunit Tests/Unit/",
-        "ci:tests:functional": "phpunit Tests/Functional/",
+        "ci:php:lint": "find bin src tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+        "ci:tests:unit": "phpunit tests/Unit",
+        "ci:tests:functional": "phpunit tests/Functional",
         "ci:tests": [
             "@ci:tests:unit",
             "@ci:tests:functional"

@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Composer script for PHP linting (#1)
 
 ### Changed
+- Adopt a more Symfony-like directory structure (#15)
 - Upgrade to PHPUnit 7.5 (#11)
 
 ### Deprecated
