@@ -14,11 +14,9 @@ in different order.
 
 Example: anthologise, theologians
 
-
 ## Installation
 
 Run `composer install` to install the required Composer packages.
-
 
 ## How to run it
 
@@ -26,13 +24,11 @@ Run `composer install` to install the required Composer packages.
 Scripts/FindAnagrams.php
 ```
 
-
 ## The exercises
 
 1. Create a class that reads a list of words from a file and returns it as an array.
 2. Create a class that takes a word and sorts the characters.
 3. Create a class that finds and returns the anagram from an array of words.
-
 
 ## About me (Oliver Klee)
 
@@ -46,11 +42,9 @@ at your company.
 
 I also frequently give workshops at the TYPO3 Developer Days.
 
-
 ## More Documentation
 
 * [Handout to my workshops on test-driven development (TDD)](https://github.com/oliverklee/tdd-reader)
-
 
 ## Other example projects
 
