@@ -12,7 +12,7 @@ class CharacterSorter
      *
      * @return string
      */
-    public function sort($unsortedString)
+    public function sort(string $unsortedString): string
     {
         $explodedString = str_split($unsortedString);
         sort($explodedString);

@@ -15,7 +15,7 @@ class AnagramFinderTest extends TestCase
      */
     private $subject = null;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->subject = new AnagramFinder();
     }
@@ -23,7 +23,7 @@ class AnagramFinderTest extends TestCase
     /**
      * @test
      */
-    public function findAnagramsForEmptyArrayReturnsEmptyArray()
+    public function findAnagramsForEmptyArrayReturnsEmptyArray(): void
     {
         self::assertSame(
             [],
@@ -34,7 +34,7 @@ class AnagramFinderTest extends TestCase
     /**
      * @test
      */
-    public function findAnagramsForArrayWithOneWordsReturnsEmptyArray()
+    public function findAnagramsForArrayWithOneWordsReturnsEmptyArray(): void
     {
         self::assertSame(
             [],
@@ -45,7 +45,7 @@ class AnagramFinderTest extends TestCase
     /**
      * @test
      */
-    public function findAnagramsForArrayWithTwoNonAgramsReturnsEmptyArray()
+    public function findAnagramsForArrayWithTwoNonAgramsReturnsEmptyArray(): void
     {
         self::assertSame(
             [],
@@ -56,7 +56,7 @@ class AnagramFinderTest extends TestCase
     /**
      * @test
      */
-    public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords()
+    public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords(): void
     {
         $anagrams = ['one', 'neo'];
 

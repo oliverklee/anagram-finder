@@ -15,7 +15,7 @@ class CharacterSorterTest extends TestCase
      */
     private $subject = null;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->subject = new CharacterSorter();
     }
@@ -23,7 +23,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForEmptyStringReturnsEmptyString()
+    public function sortForEmptyStringReturnsEmptyString(): void
     {
         self::assertSame(
             '',
@@ -34,7 +34,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForOneCharacterReturnsThatCharacter()
+    public function sortForOneCharacterReturnsThatCharacter(): void
     {
         self::assertSame(
             'h',
@@ -45,7 +45,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForPresortedCharactersReturnsSortedCharacters()
+    public function sortForPresortedCharactersReturnsSortedCharacters(): void
     {
         self::assertSame(
             'ab',
@@ -56,7 +56,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForTwoUnsortedCharactersReturnsTwoSortedCharacters()
+    public function sortForTwoUnsortedCharactersReturnsTwoSortedCharacters(): void
     {
         self::assertSame(
             'ab',
@@ -67,7 +67,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortWithWhitespaceInsideDiscardsTheWhitespace()
+    public function sortWithWhitespaceInsideDiscardsTheWhitespace(): void
     {
         self::assertSame(
             'ab',
@@ -78,7 +78,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForTwiceTheSameCharacterShouldReturnTheCharacterTwice()
+    public function sortForTwiceTheSameCharacterShouldReturnTheCharacterTwice(): void
     {
         self::assertSame(
             'aa',
@@ -89,7 +89,7 @@ class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForCharsWithApostofeShouldRemoveApostfophe()
+    public function sortForCharsWithApostofeShouldRemoveApostfophe(): void
     {
         self::assertSame(
             'aa',

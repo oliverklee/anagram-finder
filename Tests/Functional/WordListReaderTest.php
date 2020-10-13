@@ -15,7 +15,7 @@ class WordListReaderTest extends TestCase
      */
     private $subject = null;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->subject = new WordListReader();
     }
@@ -23,7 +23,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForEmptyFileReturnsEmptyArray()
+    public function readForEmptyFileReturnsEmptyArray(): void
     {
         self::assertSame(
             [],
@@ -34,7 +34,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForNonexistentFileThrowsException()
+    public function readForNonexistentFileThrowsException(): void
     {
         $this->expectException(\RuntimeException::class);
 
@@ -44,7 +44,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForOnlyOneWordInFileReturnsArraWithJustOneWord()
+    public function readForOnlyOneWordInFileReturnsArraWithJustOneWord(): void
     {
         self::assertSame(
             [
@@ -57,7 +57,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForTwoWordsInFileReturnsTheTwoWords()
+    public function readForTwoWordsInFileReturnsTheTwoWords(): void
     {
         self::assertSame(
             [
@@ -71,7 +71,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForEmptyLineAtTheEndIsRemoved()
+    public function readForEmptyLineAtTheEndIsRemoved(): void
     {
         self::assertSame(
             [
@@ -84,7 +84,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readForEmptyLineInsideIsRemoved()
+    public function readForEmptyLineInsideIsRemoved(): void
     {
         self::assertSame(
             [
@@ -98,7 +98,7 @@ class WordListReaderTest extends TestCase
     /**
      * @test
      */
-    public function readIgnoresWordsWithApostrophe()
+    public function readIgnoresWordsWithApostrophe(): void
     {
         self::assertSame(
             [

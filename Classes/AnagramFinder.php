@@ -12,7 +12,7 @@ class AnagramFinder
      *
      * @return string[]
      */
-    public function findAnagrams(array $words)
+    public function findAnagrams(array $words): array
     {
         $sorter = new CharacterSorter();
 
@@ -27,7 +27,7 @@ class AnagramFinder
             $potentialAnagrams[$sortedCharacters][] = $word;
         }
 
-        $anagrams = array_filter($potentialAnagrams, function (array $words) {
+        $anagrams = array_filter($potentialAnagrams, static function (array $words): bool {
             return count($words) > 1;
         });
 
