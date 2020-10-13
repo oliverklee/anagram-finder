@@ -1,7 +1,6 @@
 # Anagram finder
 
-[![BuildStatus](https://github.com/oliverklee/anagram-finder/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/anagram-finder/actions)
-[![Build Status](https://travis-ci.org/oliverklee/anagram-finder.svg?branch=master)](https://travis-ci.org/oliverklee/anagram-finder)
+[![Build Status](https://github.com/oliverklee/anagram-finder/workflows/CI/badge.svg?branch=main)](https://github.com/oliverklee/anagram-finder/actions)
 [![Latest Stable Version](https://poser.pugx.org/oliverklee/anagram-finder/v/stable.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
 [![Total Downloads](https://poser.pugx.org/oliverklee/anagram-finder/downloads.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
 [![Latest Unstable Version](https://poser.pugx.org/oliverklee/anagram-finder/v/unstable.svg)](https://packagist.org/packages/oliverklee/anagram-finder)
