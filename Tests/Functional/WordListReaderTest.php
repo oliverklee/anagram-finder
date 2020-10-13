@@ -3,11 +3,12 @@
 namespace OliverKlee\CodeKata\Tests\Functional;
 
 use OliverKlee\CodeKata\WordListReader;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Testcase.
  */
-class WordListReaderTest extends \PHPUnit_Framework_TestCase
+class WordListReaderTest extends TestCase
 {
     /**
      * @var WordListReader
@@ -32,10 +33,11 @@ class WordListReaderTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @test
-     * @expectedException \RuntimeException
      */
     public function readForNonexistentFileThrowsException()
     {
+        $this->expectException(\RuntimeException::class);
+
         $this->subject->read(__DIR__ . '/Fixtures/nothing-here.txt');
     }
 
