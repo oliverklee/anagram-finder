@@ -46,7 +46,7 @@ final class AnagramFinderTest extends TestCase
     /**
      * @test
      */
-    public function findAnagramsForArrayWithTwoNonAgramsReturnsEmptyArray(): void
+    public function findAnagramsForArrayWithTwoNonAnagramsReturnsEmptyArray(): void
     {
         self::assertSame(
             [],
