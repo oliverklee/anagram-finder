@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add a PHPUnit configuration file (#18)
 - Add support for PHP 7.3 and 7.4 (#13)
 - Use GitHub Actions for CI (#7)
 - Composer script for PHP linting (#1)
