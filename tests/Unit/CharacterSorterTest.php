@@ -87,7 +87,7 @@ final class CharacterSorterTest extends TestCase
     /**
      * @test
      */
-    public function sortForCharsWithApostofeShouldRemoveApostfophe(): void
+    public function sortForCharsWithApostropheRemovesApostrophe(): void
     {
         self::assertSame(
             'aa',
