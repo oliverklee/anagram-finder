@@ -13,5 +13,4 @@
 .webprj
 /.vagrant
 /vendor/
-composer.lock
 nbproject
