@@ -6,6 +6,9 @@ namespace OliverKlee\CodeKata\Tests\Unit;
 use OliverKlee\CodeKata\AnagramFinder;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \OliverKlee\CodeKata\AnagramFinder
+ */
 final class AnagramFinderTest extends TestCase
 {
     /**
