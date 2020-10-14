@@ -27,6 +27,7 @@
         "php": "~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0"
     },
     "require-dev": {
+        "infection/infection": "^0.13.6",
         "phpunit/phpunit": "^7.5.20"
     },
     "autoload": {
