@@ -6,6 +6,9 @@ namespace OliverKlee\CodeKata\Tests\Unit;
 use OliverKlee\CodeKata\CharacterSorter;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \OliverKlee\CodeKata\CharacterSorter
+ */
 final class CharacterSorterTest extends TestCase
 {
     /**

@@ -6,6 +6,9 @@ namespace OliverKlee\CodeKata\Tests\Functional;
 use OliverKlee\CodeKata\WordListReader;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @covers \OliverKlee\CodeKata\WordListReader
+ */
 final class WordListReaderTest extends TestCase
 {
     /**
