@@ -11,7 +11,7 @@ class AnagramFinder
     /**
      * @param string[] $words
      *
-     * @return string[]
+     * @return string[][]
      */
     public function findAnagrams(array $words): array
     {
