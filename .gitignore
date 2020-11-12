@@ -11,7 +11,8 @@
 .session
 .settings
 .webprj
+/.phpunit.cache/
 /infection.log
-/.vagrant
+/test-list.txt
 /vendor/
 nbproject
