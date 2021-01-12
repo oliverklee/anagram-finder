@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z
 
 ### Added
+- Add PHP 8 compatibility (#36)
 - Add Infection (#22)
 - Add a PHPUnit configuration file (#18)
 - Add support for PHP 7.3 and 7.4 (#13)
