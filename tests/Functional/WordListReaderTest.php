@@ -11,10 +11,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class WordListReaderTest extends TestCase
 {
-    /**
-     * @var WordListReader
-     */
-    private $subject = null;
+    private WordListReader $subject;
 
     protected function setUp(): void
     {
