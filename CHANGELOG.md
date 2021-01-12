@@ -27,3 +27,4 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Drop the Travis CI builds (#9)
 
 ### Fixed
+- Do not enforce strict coverage annotations (#37)
