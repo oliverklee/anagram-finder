@@ -11,10 +11,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class AnagramFinderTest extends TestCase
 {
-    /**
-     * @var AnagramFinder
-     */
-    private $subject = null;
+    private AnagramFinder $subject;
 
     protected function setUp(): void
     {

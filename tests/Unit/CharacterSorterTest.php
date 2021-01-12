@@ -11,10 +11,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class CharacterSorterTest extends TestCase
 {
-    /**
-     * @var CharacterSorter
-     */
-    private $subject = null;
+    private CharacterSorter $subject;
 
     protected function setUp(): void
     {
