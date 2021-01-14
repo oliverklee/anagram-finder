@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $wordListReader = new \OliverKlee\CodeKata\WordListReader();
-$words = $wordListReader->read(__DIR__ . '/../Resources/Private/Dictionaries/brit-a-z.txt');
+$words = $wordListReader->read(__DIR__ . '/../Resources/Private/Dictionaries/word_list_german_spell_checked.txt');
 
 $anagramFinder = new \OliverKlee\CodeKata\AnagramFinder();
 $anagrams = $anagramFinder->findAnagrams($words);
