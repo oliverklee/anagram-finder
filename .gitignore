@@ -6,7 +6,7 @@
 .TemporaryItems
 .buildpath
 .cache
-.phpunit.result.cache
+.phpunit.cache
 .project
 .session
 .settings
