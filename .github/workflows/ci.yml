@@ -11,7 +11,7 @@ on:
 jobs:
   php-lint:
     name: "PHP linter"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         php-version:
@@ -31,7 +31,7 @@ jobs:
 
   unit-tests:
     name: "Unit tests"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: php-lint
     strategy:
       matrix:
@@ -64,7 +64,7 @@ jobs:
 
   functional-tests:
     name: "Functional tests"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: php-lint
     strategy:
       matrix:
