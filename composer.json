@@ -28,8 +28,7 @@
     },
     "require-dev": {
         "infection/infection": "^0.21.0",
-        "phpunit/phpunit": "^9.5.2",
-        "phpspec/prophecy-phpunit": "^2.0.1"
+        "phpunit/phpunit": "^9.5.2"
     },
     "autoload": {
         "psr-4": {
