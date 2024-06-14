@@ -27,7 +27,7 @@
         "php": "^8.2.0"
     },
     "require-dev": {
-        "infection/infection": "^0.29.4",
+        "infection/infection": "^0.29.5",
         "phpunit/phpunit": "^11.2.1"
     },
     "autoload": {
