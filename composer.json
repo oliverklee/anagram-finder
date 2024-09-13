@@ -28,7 +28,7 @@
     },
     "require-dev": {
         "infection/infection": "^0.29.6",
-        "phpunit/phpunit": "^11.3.4"
+        "phpunit/phpunit": "^11.3.5"
     },
     "autoload": {
         "psr-4": {
