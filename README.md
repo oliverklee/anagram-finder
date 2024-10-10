@@ -35,6 +35,9 @@ The big picture is this: "Find and output all anagrams from a text file with a l
 1. Create a class that reads a list of words from a file and returns it as an array.
 2. Create a class that takes a word and sorts the characters.
 3. Create a class that finds and returns the anagram from an array of words.
+4. Deal with duplicates and empty lines in the file gracefully.
+5. Find the anagrams in a case-insensitive way.
+6. Sort the anagrams alphabetically during output.
 
 ## About me (Oliver Klee)
 
