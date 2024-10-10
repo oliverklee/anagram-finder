@@ -8,7 +8,7 @@ use OliverKlee\Anagrams\WordListReader;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$filename = $argv[1] ?? 'brit-a-z.txt';
+$filename = $argv[1] ?? 'english.txt';
 $fullPath = __DIR__ . '/../resources/dictionaries/' . $filename;
 if (!\file_exists($fullPath)) {
     echo "File not found: {$fullPath}\n";

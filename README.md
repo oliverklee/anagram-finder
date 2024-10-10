@@ -15,13 +15,13 @@ Run `composer install` to install the required Composer packages.
 ## How to run it
 
 ```bash
-bin/find-anagrams brit-a-z.txt
+bin/find-anagrams
 ```
 
 You can also specify a dictionary to use from `resources/dictionaries/`:
 
 ```bash
-bin/find-anagrams word_list_german_spell_checked.txt
+bin/find-anagrams german.txt
 ```
 
 ## The exercises
