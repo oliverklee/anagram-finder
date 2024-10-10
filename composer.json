@@ -1,6 +1,7 @@
 {
     "name": "oliverklee/anagram-finder",
     "description": "A tool for finding anagrams from a list of words (as an exercise of test-driven development).",
+    "license": "GPL-3.0-or-later",
     "type": "project",
     "keywords": [
         "tdd",
@@ -9,8 +10,6 @@
         "exercise",
         "anagrams"
     ],
-    "homepage": "https://github.com/oliverklee/tdd-reader",
-    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Oliver Klee",
@@ -19,17 +18,20 @@
             "role": "developer"
         }
     ],
+    "homepage": "https://github.com/oliverklee/tdd-reader",
     "support": {
-        "source": "https://github.com/oliverklee/anagram-finder",
-        "issues": "https://github.com/oliverklee/anagram-finder/issues"
+        "issues": "https://github.com/oliverklee/anagram-finder/issues",
+        "source": "https://github.com/oliverklee/anagram-finder"
     },
     "require": {
         "php": "~8.3.0 || ~8.4.0"
     },
     "require-dev": {
+        "ergebnis/composer-normalize": "^2.44.0",
         "infection/infection": "^0.29.7",
         "phpunit/phpunit": "^11.4.1"
     },
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "OliverKlee\\Anagrams\\": "src/"
@@ -40,16 +42,16 @@
             "OliverKlee\\Anagrams\\Tests\\": "tests/"
         }
     },
-    "prefer-stable": true,
     "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "ocramius/package-versions": true
+        },
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true,
-        "allow-plugins": {
-            "infection/extension-installer": true,
-            "ocramius/package-versions": true
-        }
+        "sort-packages": true
     },
     "scripts": {
         "ci": [
@@ -57,8 +59,10 @@
             "@ci:tests"
         ],
         "ci:composer": [
+            "@ci:composer:normalize",
             "@ci:composer:psr-verify"
         ],
+        "ci:composer:normalize": "@composer normalize --dry-run",
         "ci:composer:psr-verify": "@composer dumpautoload --optimize --strict-psr",
         "ci:php": [
             "@ci:php:lint"
@@ -68,22 +72,29 @@
             "@ci:composer",
             "@ci:php"
         ],
-        "ci:tests:unit": "phpunit tests/Unit",
-        "ci:tests:functional": "phpunit tests/Functional",
         "ci:tests": [
             "@ci:tests:unit",
             "@ci:tests:functional"
-        ]
+        ],
+        "ci:tests:functional": "phpunit tests/Functional",
+        "ci:tests:unit": "phpunit tests/Unit",
+        "fix": [
+            "@fix:composer"
+        ],
+        "fix:composer": "@composer normalize"
     },
     "scripts-descriptions": {
         "ci": "Runs all dynamic and static code checks.",
         "ci:composer": "Runs all Composer-related static checks.",
+        "ci:composer:normalize": "Checks the composer.json.",
         "ci:composer:psr-verify": "Verifies PSR-4 namespace correctness.",
         "ci:php": "Runs all static checks for PHP files.",
         "ci:php:lint": "Lints the PHP files for syntax errors.",
         "ci:static": "Runs all static code checks (syntax, style, types).",
         "ci:tests": "Runs all tests (unit and functional).",
         "ci:tests:functional": "Runs the functional tests.",
-        "ci:tests:unit": "Runs the unit tests."
+        "ci:tests:unit": "Runs the unit tests.",
+        "fix": "Runs all automatic code style fixes.",
+        "fix:composer": "Normalizes all composer.json files."
     }
 }
