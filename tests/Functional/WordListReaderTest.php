@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace OliverKlee\CodeKata\Tests\Functional;
+namespace OliverKlee\Anagrams\Tests\Functional;
 
-use OliverKlee\CodeKata\WordListReader;
+use OliverKlee\Anagrams\WordListReader;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \OliverKlee\CodeKata\WordListReader
+ * @covers \OliverKlee\Anagrams\WordListReader
  */
 final class WordListReaderTest extends TestCase
 {
