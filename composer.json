@@ -64,7 +64,7 @@
         ],
         "ci": [
             "@ci:static",
-            "@ci:dynamic"
+            "@ci:tests"
         ]
     },
     "scripts-descriptions": {
