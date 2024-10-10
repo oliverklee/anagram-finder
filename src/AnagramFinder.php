@@ -10,15 +10,14 @@ namespace OliverKlee\Anagrams;
 class AnagramFinder
 {
     /**
-     * @param string[] $words
+     * @param array<non-empty-string> $words
      *
-     * @return string[][]
+     * @return list<non-empty-list<non-empty-string>>
      */
     public function findAnagrams(array $words): array
     {
         $sorter = new CharacterSorter();
 
-        /** @var string[][] $potentialAnagrams */
         $potentialAnagrams = [];
 
         foreach ($words as $word) {
