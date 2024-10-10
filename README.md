@@ -8,6 +8,10 @@ in different order.
 
 Example: anthologise, theologians
 
+The dictionaries have been copied from the
+[most-common-words-by-language](https://github.com/oprogramador/most-common-words-by-language)
+project.
+
 ## Installation
 
 Run `composer install` to install the required Composer packages.
