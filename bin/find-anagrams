@@ -3,6 +3,9 @@
 
 declare(strict_types=1);
 
+use OliverKlee\Anagrams\AnagramFinder;
+use OliverKlee\Anagrams\WordListReader;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $filename = $argv[1] ?? 'brit-a-z.txt';
@@ -12,11 +15,8 @@ if (!\file_exists($fullPath)) {
     exit(1);
 }
 
-$wordListReader = new \OliverKlee\Anagrams\WordListReader();
-$words = $wordListReader->read($fullPath);
-
-$anagramFinder = new \OliverKlee\Anagrams\AnagramFinder();
-$anagrams = $anagramFinder->findAnagrams($words);
+$words = (new WordListReader())->read($fullPath);
+$anagrams = (new AnagramFinder())->findAnagrams($words);
 
 foreach ($anagrams as $anagram) {
     echo \implode(', ', $anagram) . "\n";
