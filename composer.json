@@ -56,12 +56,17 @@
             "@ci:static",
             "@ci:tests"
         ],
+        "ci:composer": [
+            "@ci:composer:psr-verify"
+        ],
+        "ci:composer:psr-verify": "@composer dumpautoload --optimize --strict-psr",
         "ci:php": [
             "@ci:php:lint"
         ],
         "ci:php:lint": "find bin src tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
         "ci:static": [
-            "@ci:php:lint"
+            "@ci:composer",
+            "@ci:php"
         ],
         "ci:tests:unit": "phpunit tests/Unit",
         "ci:tests:functional": "phpunit tests/Functional",
@@ -72,6 +77,8 @@
     },
     "scripts-descriptions": {
         "ci": "Runs all dynamic and static code checks.",
+        "ci:composer": "Runs all Composer-related static checks.",
+        "ci:composer:psr-verify": "Verifies PSR-4 namespace correctness.",
         "ci:php": "Runs all static checks for PHP files.",
         "ci:php:lint": "Lints the PHP files for syntax errors.",
         "ci:static": "Runs all static code checks (syntax, style, types).",
