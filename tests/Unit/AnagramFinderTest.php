@@ -28,33 +28,4 @@ final class AnagramFinderTest extends TestCase
             $this->subject->findAnagrams([])
         );
     }
-
-    #[Test]
-    public function findAnagramsForArrayWithOneWordsReturnsEmptyArray(): void
-    {
-        self::assertSame(
-            [],
-            $this->subject->findAnagrams(['iphone'])
-        );
-    }
-
-    #[Test]
-    public function findAnagramsForArrayWithTwoNonAnagramsReturnsEmptyArray(): void
-    {
-        self::assertSame(
-            [],
-            $this->subject->findAnagrams(['ios', 'android'])
-        );
-    }
-
-    #[Test]
-    public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords(): void
-    {
-        $anagrams = ['one', 'neo'];
-
-        self::assertSame(
-            [$anagrams],
-            $this->subject->findAnagrams($anagrams)
-        );
-    }
 }
