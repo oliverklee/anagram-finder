@@ -10,7 +10,7 @@ namespace OliverKlee\Anagrams;
 class WordListReader
 {
     /**
-     * @return string[]
+     * @return list<string>
      */
     public function read(string $fileName): array
     {
