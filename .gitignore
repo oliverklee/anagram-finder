@@ -12,6 +12,7 @@
 .settings
 .webprj
 /.phpunit.cache/
+/.php-cs-fixer.cache
 /infection.log
 /test-list.txt
 /vendor/

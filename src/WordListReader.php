@@ -1,9 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
 namespace OliverKlee\Anagrams;
-
-use RuntimeException;
 
 /**
  * This class can read a list of words from disk.
@@ -16,7 +15,7 @@ class WordListReader
     public function read(string $fileName): array
     {
         if (!file_exists($fileName)) {
-            throw new RuntimeException('File doesn\'t exists');
+            throw new \RuntimeException('File doesn\'t exists');
         }
 
         $content = file_get_contents($fileName);
@@ -26,7 +25,7 @@ class WordListReader
         $rawWords = explode("\n", $content);
 
         $filteredWords = array_filter($rawWords, static function (string $word): bool {
-            return trim($word) !== '' && strpos($word, '\'') === false;
+            return trim($word) !== '' && !str_contains($word, '\'');
         });
 
         return array_values($filteredWords);
