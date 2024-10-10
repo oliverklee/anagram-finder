@@ -20,6 +20,8 @@ bin/FindAnagrams.php
 
 ## The exercises
 
+The big picture is this: "Find and output all anagrams from a text file with a list of words."
+
 1. Create a class that reads a list of words from a file and returns it as an array.
 2. Create a class that takes a word and sorts the characters.
 3. Create a class that finds and returns the anagram from an array of words.
