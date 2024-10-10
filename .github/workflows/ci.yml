@@ -39,6 +39,7 @@ jobs:
     strategy:
       matrix:
         command:
+          - composer:normalize
           - composer:psr-verify
         php-version:
           - '8.3'
