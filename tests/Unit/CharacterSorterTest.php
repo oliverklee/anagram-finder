@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace OliverKlee\CodeKata\Tests\Unit;
+namespace OliverKlee\Anagrams\Tests\Unit;
 
-use OliverKlee\CodeKata\CharacterSorter;
+use OliverKlee\Anagrams\CharacterSorter;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \OliverKlee\CodeKata\CharacterSorter
+ * @covers \OliverKlee\Anagrams\CharacterSorter
  */
 final class CharacterSorterTest extends TestCase
 {

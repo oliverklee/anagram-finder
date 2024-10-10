@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OliverKlee\\CodeKata\\": "src/"
+            "OliverKlee\\Anagrams\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OliverKlee\\CodeKata\\Tests\\": "tests/"
+            "OliverKlee\\Anagrams\\Tests\\": "tests/"
         }
     },
     "prefer-stable": true,

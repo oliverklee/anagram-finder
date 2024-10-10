@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace OliverKlee\CodeKata\Tests\Unit;
+namespace OliverKlee\Anagrams\Tests\Unit;
 
-use OliverKlee\CodeKata\AnagramFinder;
+use OliverKlee\Anagrams\AnagramFinder;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \OliverKlee\CodeKata\AnagramFinder
+ * @covers \OliverKlee\Anagrams\AnagramFinder
  */
 final class AnagramFinderTest extends TestCase
 {
