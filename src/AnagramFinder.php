@@ -29,9 +29,7 @@ class AnagramFinder
             $potentialAnagrams[$sortedCharacters][] = $word;
         }
 
-        $anagrams = array_filter($potentialAnagrams, static function (array $words): bool {
-            return count($words) > 1;
-        });
+        $anagrams = array_filter($potentialAnagrams, static fn(array $words): bool => count($words) > 1);
 
         return array_values($anagrams);
     }

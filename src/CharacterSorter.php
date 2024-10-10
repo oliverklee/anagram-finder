@@ -14,6 +14,6 @@ class CharacterSorter
         $explodedString = str_split($unsortedString);
         sort($explodedString);
 
-        return trim(implode($explodedString), '\' ');
+        return trim(implode('', $explodedString), '\' ');
     }
 }

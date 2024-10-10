@@ -14,6 +14,7 @@ final class CharacterSorterTest extends TestCase
 {
     private CharacterSorter $subject;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->subject = new CharacterSorter();
