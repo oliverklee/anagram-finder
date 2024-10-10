@@ -1,15 +1,23 @@
 #!/usr/bin/env php
 <?php
+
 declare(strict_types=1);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+$filename = $argv[1] ?? 'brit-a-z.txt';
+$fullPath = __DIR__ . '/../resources/dictionaries/' . $filename;
+if (!\file_exists($fullPath)) {
+    echo "File not found: {$fullPath}\n";
+    exit(1);
+}
+
 $wordListReader = new \OliverKlee\Anagrams\WordListReader();
-$words = $wordListReader->read(__DIR__ . '/../resources/dictionaries/brit-a-z.txt');
+$words = $wordListReader->read($fullPath);
 
 $anagramFinder = new \OliverKlee\Anagrams\AnagramFinder();
 $anagrams = $anagramFinder->findAnagrams($words);
 
 foreach ($anagrams as $anagram) {
-    echo implode(', ', $anagram) . "\n";
+    echo \implode(', ', $anagram) . "\n";
 }
