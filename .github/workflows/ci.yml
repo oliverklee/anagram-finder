@@ -29,6 +29,44 @@ jobs:
       - name: "Run PHP lint"
         run: "composer ci:php:lint"
 
+  static-analysis:
+    name: Static Analysis
+
+    runs-on: ubuntu-24.04
+
+    needs: [ php-lint ]
+
+    strategy:
+      matrix:
+        command:
+          - composer:psr-verify
+        php-version:
+          - '8.3'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ matrix.php-version }}"
+          ini-file: development
+          tools: composer:v2
+          coverage: none
+      - name: "Cache dependencies installed with composer"
+        uses: actions/cache@v4
+        with:
+          key: "php${{ matrix.php-version }}
+               -composer-${{ hashFiles('**/composer.lock') }}"
+          path: ~/.composer/cache
+          restore-keys: "php${{ matrix.php-version }}-composer-\n"
+      - name: "Install composer dependencies"
+        run: |
+          composer install --no-ansi --no-interaction --no-progress
+          composer show
+      - name: "Run Command"
+        run: "composer ci:${{ matrix.command }}"
+
   unit-tests:
     name: "Unit tests"
     runs-on: ubuntu-24.04
