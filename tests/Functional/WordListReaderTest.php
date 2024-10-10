@@ -14,6 +14,7 @@ final class WordListReaderTest extends TestCase
 {
     private WordListReader $subject;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->subject = new WordListReader();

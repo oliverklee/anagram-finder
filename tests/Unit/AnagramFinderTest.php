@@ -14,6 +14,7 @@ final class AnagramFinderTest extends TestCase
 {
     private AnagramFinder $subject;
 
+    #[\Override]
     protected function setUp(): void
     {
         $this->subject = new AnagramFinder();
