@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace OliverKlee\Anagrams\Tests\Unit;
 
 use OliverKlee\Anagrams\CharacterSorter;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @covers \OliverKlee\Anagrams\CharacterSorter
- */
+#[CoversClass(CharacterSorter::class)]
 final class CharacterSorterTest extends TestCase
 {
     private CharacterSorter $subject;
@@ -19,9 +19,7 @@ final class CharacterSorterTest extends TestCase
         $this->subject = new CharacterSorter();
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForEmptyStringReturnsEmptyString(): void
     {
         self::assertSame(
@@ -30,9 +28,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForOneCharacterReturnsThatCharacter(): void
     {
         self::assertSame(
@@ -41,9 +37,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForPresortedCharactersReturnsSortedCharacters(): void
     {
         self::assertSame(
@@ -52,9 +46,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForTwoUnsortedCharactersReturnsTwoSortedCharacters(): void
     {
         self::assertSame(
@@ -63,9 +55,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortWithWhitespaceInsideDiscardsTheWhitespace(): void
     {
         self::assertSame(
@@ -74,9 +64,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForTwiceTheSameCharacterShouldReturnTheCharacterTwice(): void
     {
         self::assertSame(
@@ -85,9 +73,7 @@ final class CharacterSorterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function sortForCharsWithApostropheRemovesApostrophe(): void
     {
         self::assertSame(

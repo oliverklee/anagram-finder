@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace OliverKlee\Anagrams\Tests\Unit;
 
 use OliverKlee\Anagrams\AnagramFinder;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @covers \OliverKlee\Anagrams\AnagramFinder
- */
+#[CoversClass(AnagramFinder::class)]
 final class AnagramFinderTest extends TestCase
 {
     private AnagramFinder $subject;
@@ -19,9 +19,7 @@ final class AnagramFinderTest extends TestCase
         $this->subject = new AnagramFinder();
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function findAnagramsForEmptyArrayReturnsEmptyArray(): void
     {
         self::assertSame(
@@ -30,9 +28,7 @@ final class AnagramFinderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function findAnagramsForArrayWithOneWordsReturnsEmptyArray(): void
     {
         self::assertSame(
@@ -41,9 +37,7 @@ final class AnagramFinderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function findAnagramsForArrayWithTwoNonAnagramsReturnsEmptyArray(): void
     {
         self::assertSame(
@@ -52,9 +46,7 @@ final class AnagramFinderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function findAnagramsForTwoAnagramWordsReturnsArrayWithBothWords(): void
     {
         $anagrams = ['one', 'neo'];

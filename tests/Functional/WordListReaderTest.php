@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace OliverKlee\Anagrams\Tests\Functional;
 
 use OliverKlee\Anagrams\WordListReader;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @covers \OliverKlee\Anagrams\WordListReader
- */
+#[CoversClass(WordListReader::class)]
 final class WordListReaderTest extends TestCase
 {
     private WordListReader $subject;
@@ -19,9 +19,7 @@ final class WordListReaderTest extends TestCase
         $this->subject = new WordListReader();
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForEmptyFileReturnsEmptyArray(): void
     {
         self::assertSame(
@@ -30,9 +28,7 @@ final class WordListReaderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForNonexistentFileThrowsException(): void
     {
         $this->expectException(\RuntimeException::class);
@@ -40,9 +36,7 @@ final class WordListReaderTest extends TestCase
         $this->subject->read(__DIR__ . '/Fixtures/nothing-here.txt');
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForOnlyOneWordInFileReturnsArraWithJustOneWord(): void
     {
         self::assertSame(
@@ -53,9 +47,7 @@ final class WordListReaderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForTwoWordsInFileReturnsTheTwoWords(): void
     {
         self::assertSame(
@@ -67,9 +59,7 @@ final class WordListReaderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForEmptyLineAtTheEndIsRemoved(): void
     {
         self::assertSame(
@@ -80,9 +70,7 @@ final class WordListReaderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readForEmptyLineInsideIsRemoved(): void
     {
         self::assertSame(
@@ -94,9 +82,7 @@ final class WordListReaderTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function readIgnoresWordsWithApostrophe(): void
     {
         self::assertSame(
