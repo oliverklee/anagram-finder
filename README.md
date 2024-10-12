@@ -59,5 +59,5 @@ I also frequently give workshops at the TYPO3 Developer Days.
 
 * [Coffee example](https://github.com/oliverklee/coffee)
   is my starting point for demonstrating TDD
-* [Tea example](https://github.com/oliverklee/ext_tea)
-  for unit tests for extbase extensions for TYPO3 CMS
+* [Tea example](https://github.com/oliverklee/tea-for-workshops)
+  for testing Extbase TYPO3 extensions
