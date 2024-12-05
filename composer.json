@@ -27,7 +27,7 @@
         "php": "~8.3.0 || ~8.4.0"
     },
     "require-dev": {
-        "ergebnis/composer-normalize": "^2.44.0",
+        "ergebnis/composer-normalize": "^2.45.0",
         "friendsofphp/php-cs-fixer": "^3.65.0",
         "infection/infection": "^0.29.8",
         "phpstan/extension-installer": "^1.4.3",
