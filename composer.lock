@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe6bb758ddb307867ea160f3c6cf78c5",
+    "content-hash": "6bd9bf34e3f69f3b3ff9afd287301c83",
     "packages": [],
     "packages-dev": [
         {
@@ -3251,6 +3251,59 @@
             "time": "2025-02-10T08:14:01+00:00"
         },
         {
+            "name": "rector/type-perfect",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/type-perfect.git",
+                "reference": "eefd712f182ebdde175090ccdb1ee8acb0265986"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/type-perfect/zipball/eefd712f182ebdde175090ccdb1ee8acb0265986",
+                "reference": "eefd712f182ebdde175090ccdb1ee8acb0265986",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phpstan/phpstan": "^2.0",
+                "webmozart/assert": "^1.11"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "config/extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rector\\TypePerfect\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Next level type declaration checks",
+            "support": {
+                "issues": "https://github.com/rectorphp/type-perfect/issues",
+                "source": "https://github.com/rectorphp/type-perfect/tree/2.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-04T09:04:08+00:00"
+        },
+        {
             "name": "sanmai/later",
             "version": "0.1.4",
             "source": {
@@ -5982,12 +6035,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "~8.3.0 || ~8.4.0"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
