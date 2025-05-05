@@ -10,7 +10,7 @@ on:
 
 jobs:
   php-lint:
-    name: "PHP linter"
+    name: PHP linter
     runs-on: ubuntu-24.04
     strategy:
       matrix:
@@ -20,13 +20,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: "Install PHP"
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "${{ matrix.php-version }}"
           ini-file: development
           coverage: none
-      - name: "Run PHP lint"
+      - name: Run PHP lint
         run: "composer ci:php:lint"
 
   static-analysis:
@@ -50,29 +50,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: "Install PHP"
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "${{ matrix.php-version }}"
           ini-file: development
           tools: composer:v2
           coverage: none
-      - name: "Cache dependencies installed with composer"
+      - name: Cache dependencies installed with composer
         uses: actions/cache@v4
         with:
           key: "php${{ matrix.php-version }}
                -composer-${{ hashFiles('**/composer.lock') }}"
           path: ~/.composer/cache
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
-      - name: "Install composer dependencies"
+      - name: Install composer dependencies
         run: |
           composer install --no-ansi --no-interaction --no-progress
           composer show
-      - name: "Run Command"
+      - name: Run Command
         run: "composer ci:${{ matrix.command }}"
 
   unit-tests:
-    name: "Unit tests"
+    name: Unit tests
     runs-on: ubuntu-24.04
     needs: php-lint
     strategy:
@@ -83,29 +83,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: "Install PHP"
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "${{ matrix.php-version }}"
           ini-file: development
           tools: composer:v2
           coverage: none
-      - name: "Cache dependencies installed with composer"
+      - name: Cache dependencies installed with composer
         uses: actions/cache@v4
         with:
           key: "php${{ matrix.php-version }}
                -composer-${{ hashFiles('**/composer.lock') }}"
           path: ~/.composer/cache
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
-      - name: "Install composer dependencies"
+      - name: Install composer dependencies
         run: |
           composer install --no-ansi --no-interaction --no-progress
           composer show
-      - name: "Run tests"
+      - name: Run tests
         run: "composer ci:tests:unit"
 
   functional-tests:
-    name: "Functional tests"
+    name: Functional tests
     runs-on: ubuntu-24.04
     needs: php-lint
     strategy:
@@ -116,23 +116,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: "Install PHP"
+      - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: "${{ matrix.php-version }}"
           ini-file: development
           tools: composer:v2
           coverage: none
-      - name: "Cache dependencies installed with composer"
+      - name: Cache dependencies installed with composer
         uses: actions/cache@v4
         with:
           key: "php${{ matrix.php-version }}
                -composer-${{ hashFiles('**/composer.lock') }}"
           path: ~/.composer/cache
           restore-keys: "php${{ matrix.php-version }}-composer-\n"
-      - name: "Install composer dependencies"
+      - name: Install composer dependencies
         run: |
           composer install --no-ansi --no-interaction --no-progress
           composer show
-      - name: "Run tests"
+      - name: Run tests
         run: "composer ci:tests:functional"
