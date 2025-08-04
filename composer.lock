@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7900d07343f2815ffd88cacb5c9ffa67",
+    "content-hash": "dfddbcbe582650fbe96ecab7aba2e1ad",
     "packages": [],
     "packages-dev": [
         {
@@ -1225,16 +1225,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.31.0",
+            "version": "0.31.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "94ef40f9d469d2d0f20f82081f700b0754ad949a"
+                "reference": "210e22e670cc6c03ee7c20ce34ff63db3a99a6ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/94ef40f9d469d2d0f20f82081f700b0754ad949a",
-                "reference": "94ef40f9d469d2d0f20f82081f700b0754ad949a",
+                "url": "https://api.github.com/repos/infection/infection/zipball/210e22e670cc6c03ee7c20ce34ff63db3a99a6ea",
+                "reference": "210e22e670cc6c03ee7c20ce34ff63db3a99a6ea",
                 "shasum": ""
             },
             "require": {
@@ -1340,7 +1340,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.31.0"
+                "source": "https://github.com/infection/infection/tree/0.31.1"
             },
             "funding": [
                 {
@@ -1352,7 +1352,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-07-28T16:45:25+00:00"
+            "time": "2025-08-04T09:59:16+00:00"
         },
         {
             "name": "infection/mutator",
@@ -3459,21 +3459,21 @@
         },
         {
             "name": "sanmai/di-container",
-            "version": "0.1.4",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/di-container.git",
-                "reference": "7141a28f33d72dd7a9e3148e32a8b54b93050453"
+                "reference": "355534ad7970fc7dab4211ecaf2da5c546855ee8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/di-container/zipball/7141a28f33d72dd7a9e3148e32a8b54b93050453",
-                "reference": "7141a28f33d72dd7a9e3148e32a8b54b93050453",
+                "url": "https://api.github.com/repos/sanmai/di-container/zipball/355534ad7970fc7dab4211ecaf2da5c546855ee8",
+                "reference": "355534ad7970fc7dab4211ecaf2da5c546855ee8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
-                "psr/container": "^2.0",
+                "psr/container": "^1.1.2 || ^2.0",
                 "sanmai/pipeline": "^6.17 || ^7.0"
             },
             "require-dev": {
@@ -3513,10 +3513,16 @@
                     "homepage": "https://twitter.com/tfidry"
                 }
             ],
-            "description": "Straightforward DI container with autowiring",
+            "description": "dependency injection container with automatic constructor dependency resolution",
+            "keywords": [
+                "Autowiring",
+                "constructor di",
+                "di container",
+                "psr 11"
+            ],
             "support": {
                 "issues": "https://github.com/sanmai/di-container/issues",
-                "source": "https://github.com/sanmai/di-container/tree/0.1.4"
+                "source": "https://github.com/sanmai/di-container/tree/0.1.5"
             },
             "funding": [
                 {
@@ -3524,7 +3530,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-24T03:40:49+00:00"
+            "time": "2025-08-04T09:43:58+00:00"
         },
         {
             "name": "sanmai/duoclock",
@@ -4613,16 +4619,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v7.3.1",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101"
+                "reference": "5f360ebc65c55265a74d23d7fe27f957870158a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9e27aecde8f506ba0fd1d9989620c04a87697101",
-                "reference": "9e27aecde8f506ba0fd1d9989620c04a87697101",
+                "url": "https://api.github.com/repos/symfony/console/zipball/5f360ebc65c55265a74d23d7fe27f957870158a1",
+                "reference": "5f360ebc65c55265a74d23d7fe27f957870158a1",
                 "shasum": ""
             },
             "require": {
@@ -4687,7 +4693,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v7.3.1"
+                "source": "https://github.com/symfony/console/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -4699,11 +4705,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-27T19:55:54+00:00"
+            "time": "2025-07-30T17:13:41+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4930,16 +4940,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v7.3.0",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb"
+                "reference": "edcbb768a186b5c3f25d0643159a787d3e63b7fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
-                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/edcbb768a186b5c3f25d0643159a787d3e63b7fd",
+                "reference": "edcbb768a186b5c3f25d0643159a787d3e63b7fd",
                 "shasum": ""
             },
             "require": {
@@ -4976,7 +4986,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v7.3.0"
+                "source": "https://github.com/symfony/filesystem/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -4988,24 +4998,28 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-25T15:15:23+00:00"
+            "time": "2025-07-07T08:17:47+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v7.3.0",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ec2344cf77a48253bbca6939aa3d2477773ea63d"
+                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ec2344cf77a48253bbca6939aa3d2477773ea63d",
-                "reference": "ec2344cf77a48253bbca6939aa3d2477773ea63d",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/2a6614966ba1074fa93dae0bc804227422df4dfe",
+                "reference": "2a6614966ba1074fa93dae0bc804227422df4dfe",
                 "shasum": ""
             },
             "require": {
@@ -5040,7 +5054,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v7.3.0"
+                "source": "https://github.com/symfony/finder/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -5052,11 +5066,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-30T19:00:26+00:00"
+            "time": "2025-07-15T13:41:35+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -5808,16 +5826,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.3.0",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125"
+                "reference": "42f505aff654e62ac7ac2ce21033818297ca89ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/f3570b8c61ca887a9e2938e85cb6458515d2b125",
-                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125",
+                "url": "https://api.github.com/repos/symfony/string/zipball/42f505aff654e62ac7ac2ce21033818297ca89ca",
+                "reference": "42f505aff654e62ac7ac2ce21033818297ca89ca",
                 "shasum": ""
             },
             "require": {
@@ -5875,7 +5893,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.3.0"
+                "source": "https://github.com/symfony/string/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -5887,11 +5905,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-20T20:19:01+00:00"
+            "time": "2025-07-10T08:47:49+00:00"
         },
         {
             "name": "thecodingmachine/safe",
