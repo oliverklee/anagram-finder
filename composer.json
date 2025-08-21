@@ -29,7 +29,7 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.47.0",
         "friendsofphp/php-cs-fixer": "^3.86.0",
-        "infection/infection": "^0.31.1",
+        "infection/infection": "^0.31.2",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.22",
         "phpstan/phpstan-deprecation-rules": "^2.0.3",
