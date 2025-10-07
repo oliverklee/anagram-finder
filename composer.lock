@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a80f2548c83b3c7ddee269b7816ea5b9",
+    "content-hash": "74e8ef2823ead928d616584544700d24",
     "packages": [],
     "packages-dev": [
         {
@@ -1236,16 +1236,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.31.2",
+            "version": "0.31.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "242785d48ac2dc00a1d3a77b2048b289dc82cbc9"
+                "reference": "844517bde14cf8745c48c02e65a003a39e90fe00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/242785d48ac2dc00a1d3a77b2048b289dc82cbc9",
-                "reference": "242785d48ac2dc00a1d3a77b2048b289dc82cbc9",
+                "url": "https://api.github.com/repos/infection/infection/zipball/844517bde14cf8745c48c02e65a003a39e90fe00",
+                "reference": "844517bde14cf8745c48c02e65a003a39e90fe00",
                 "shasum": ""
             },
             "require": {
@@ -1351,7 +1351,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.31.2"
+                "source": "https://github.com/infection/infection/tree/0.31.3"
             },
             "funding": [
                 {
@@ -1363,7 +1363,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2025-08-21T06:43:51+00:00"
+            "time": "2025-10-07T10:03:00+00:00"
         },
         {
             "name": "infection/mutator",
@@ -1420,16 +1420,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "6.5.1",
+            "version": "6.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jsonrainbow/json-schema.git",
-                "reference": "b5ab21e431594897e5bb86343c01f140ba862c26"
+                "reference": "ac0d369c09653cf7af561f6d91a705bc617a87b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/b5ab21e431594897e5bb86343c01f140ba862c26",
-                "reference": "b5ab21e431594897e5bb86343c01f140ba862c26",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/ac0d369c09653cf7af561f6d91a705bc617a87b8",
+                "reference": "ac0d369c09653cf7af561f6d91a705bc617a87b8",
                 "shasum": ""
             },
             "require": {
@@ -1489,9 +1489,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jsonrainbow/json-schema/issues",
-                "source": "https://github.com/jsonrainbow/json-schema/tree/6.5.1"
+                "source": "https://github.com/jsonrainbow/json-schema/tree/6.5.2"
             },
-            "time": "2025-08-29T10:58:11+00:00"
+            "time": "2025-09-09T09:42:27+00:00"
         },
         {
             "name": "localheinz/diff",
@@ -1550,16 +1550,16 @@
         },
         {
             "name": "marc-mabe/php-enum",
-            "version": "v4.7.1",
+            "version": "v4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/marc-mabe/php-enum.git",
-                "reference": "7159809e5cfa041dca28e61f7f7ae58063aae8ed"
+                "reference": "bb426fcdd65c60fb3638ef741e8782508fda7eef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marc-mabe/php-enum/zipball/7159809e5cfa041dca28e61f7f7ae58063aae8ed",
-                "reference": "7159809e5cfa041dca28e61f7f7ae58063aae8ed",
+                "url": "https://api.github.com/repos/marc-mabe/php-enum/zipball/bb426fcdd65c60fb3638ef741e8782508fda7eef",
+                "reference": "bb426fcdd65c60fb3638ef741e8782508fda7eef",
                 "shasum": ""
             },
             "require": {
@@ -1617,9 +1617,9 @@
             ],
             "support": {
                 "issues": "https://github.com/marc-mabe/php-enum/issues",
-                "source": "https://github.com/marc-mabe/php-enum/tree/v4.7.1"
+                "source": "https://github.com/marc-mabe/php-enum/tree/v4.7.2"
             },
-            "time": "2024-11-28T04:54:44+00:00"
+            "time": "2025-09-14T11:18:39+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3668,16 +3668,16 @@
         },
         {
             "name": "sanmai/pipeline",
-            "version": "7.1",
+            "version": "7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/pipeline.git",
-                "reference": "d01565ef9f5cd7d1019c5f8bee09497067511f36"
+                "reference": "9ead38671b86a2c689484a871c72ce645326e9dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/d01565ef9f5cd7d1019c5f8bee09497067511f36",
-                "reference": "d01565ef9f5cd7d1019c5f8bee09497067511f36",
+                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/9ead38671b86a2c689484a871c72ce645326e9dd",
+                "reference": "9ead38671b86a2c689484a871c72ce645326e9dd",
                 "shasum": ""
             },
             "require": {
@@ -3693,7 +3693,7 @@
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "^2",
                 "phpunit/phpunit": ">=9.4 <12",
-                "sanmai/phpstan-rules": "^0.3.0",
+                "sanmai/phpstan-rules": "^0.3.11",
                 "sanmai/phpunit-double-colon-syntax": "^0.1.1",
                 "vimeo/psalm": ">=2"
             },
@@ -3724,7 +3724,7 @@
             "description": "General-purpose collections pipeline",
             "support": {
                 "issues": "https://github.com/sanmai/pipeline/issues",
-                "source": "https://github.com/sanmai/pipeline/tree/7.1"
+                "source": "https://github.com/sanmai/pipeline/tree/7.2"
             },
             "funding": [
                 {
@@ -3732,7 +3732,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-27T07:02:29+00:00"
+            "time": "2025-09-23T12:30:19+00:00"
         },
         {
             "name": "sebastian/cli-parser",
