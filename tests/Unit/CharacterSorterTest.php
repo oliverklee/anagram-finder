@@ -25,7 +25,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             '',
-            $this->subject->sort('')
+            $this->subject->sort(''),
         );
     }
 
@@ -34,7 +34,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'h',
-            $this->subject->sort('h')
+            $this->subject->sort('h'),
         );
     }
 
@@ -43,7 +43,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'ab',
-            $this->subject->sort('ab')
+            $this->subject->sort('ab'),
         );
     }
 
@@ -52,7 +52,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'ab',
-            $this->subject->sort('ba')
+            $this->subject->sort('ba'),
         );
     }
 
@@ -61,7 +61,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'ab',
-            $this->subject->sort('b a')
+            $this->subject->sort('b a'),
         );
     }
 
@@ -70,7 +70,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'aa',
-            $this->subject->sort('aa')
+            $this->subject->sort('aa'),
         );
     }
 
@@ -79,7 +79,7 @@ final class CharacterSorterTest extends TestCase
     {
         self::assertSame(
             'aa',
-            $this->subject->sort('a\'a')
+            $this->subject->sort('a\'a'),
         );
     }
 }
