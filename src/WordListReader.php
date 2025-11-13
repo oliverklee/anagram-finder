@@ -24,7 +24,10 @@ class WordListReader
         }
         $rawWords = explode("\n", $content);
 
-        $filteredWords = array_filter($rawWords, static fn(string $word): bool => trim($word) !== '' && !str_contains($word, '\''));
+        $filteredWords = array_filter(
+            $rawWords,
+            static fn(string $word): bool => trim($word) !== '' && !str_contains($word, '\''),
+        );
 
         return array_values($filteredWords);
     }

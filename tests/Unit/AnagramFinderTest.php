@@ -25,7 +25,7 @@ final class AnagramFinderTest extends TestCase
     {
         self::assertSame(
             [],
-            $this->subject->findAnagrams([])
+            $this->subject->findAnagrams([]),
         );
     }
 
@@ -34,7 +34,7 @@ final class AnagramFinderTest extends TestCase
     {
         self::assertSame(
             [],
-            $this->subject->findAnagrams(['iphone'])
+            $this->subject->findAnagrams(['iphone']),
         );
     }
 
@@ -43,7 +43,7 @@ final class AnagramFinderTest extends TestCase
     {
         self::assertSame(
             [],
-            $this->subject->findAnagrams(['ios', 'android'])
+            $this->subject->findAnagrams(['ios', 'android']),
         );
     }
 
@@ -54,7 +54,7 @@ final class AnagramFinderTest extends TestCase
 
         self::assertSame(
             [$anagrams],
-            $this->subject->findAnagrams($anagrams)
+            $this->subject->findAnagrams($anagrams),
         );
     }
 }

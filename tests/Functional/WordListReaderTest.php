@@ -25,7 +25,7 @@ final class WordListReaderTest extends TestCase
     {
         self::assertSame(
             [],
-            $this->subject->read(__DIR__ . '/Fixtures/empty.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/empty.txt'),
         );
     }
 
@@ -44,7 +44,7 @@ final class WordListReaderTest extends TestCase
             [
                 'one',
             ],
-            $this->subject->read(__DIR__ . '/Fixtures/oneWord.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/oneWord.txt'),
         );
     }
 
@@ -56,7 +56,7 @@ final class WordListReaderTest extends TestCase
                 'one',
                 'two',
             ],
-            $this->subject->read(__DIR__ . '/Fixtures/twoWords.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/twoWords.txt'),
         );
     }
 
@@ -67,7 +67,7 @@ final class WordListReaderTest extends TestCase
             [
                 'one',
             ],
-            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineAtTheEnd.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineAtTheEnd.txt'),
         );
     }
 
@@ -79,7 +79,7 @@ final class WordListReaderTest extends TestCase
                 'one',
                 'two',
             ],
-            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineInside.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithEmptyLineInside.txt'),
         );
     }
 
@@ -88,7 +88,7 @@ final class WordListReaderTest extends TestCase
     {
         self::assertSame(
             [],
-            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithApostrophe.txt')
+            $this->subject->read(__DIR__ . '/Fixtures/oneWordWithApostrophe.txt'),
         );
     }
 }
