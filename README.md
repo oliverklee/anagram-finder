@@ -53,11 +53,11 @@ I also frequently give workshops at the TYPO3 Developer Days.
 
 ## More Documentation
 
-* [Handout to my workshops on test-driven development (TDD)](https://github.com/oliverklee/tdd-reader)
+* [Handout to my workshops on test-driven development (TDD)](https://github.com/oliverklee-de/tdd-reader)
 
 ## Other example projects
 
-* [Coffee example](https://github.com/oliverklee/coffee)
+* [Coffee example](https://github.com/oliverklee-de/coffee)
   is my starting point for demonstrating TDD
-* [Tea example](https://github.com/oliverklee/tea-for-workshops)
+* [Tea example](https://github.com/oliverklee-de/tea-for-workshops)
   for testing Extbase TYPO3 extensions
