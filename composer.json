@@ -18,10 +18,10 @@
             "role": "developer"
         }
     ],
-    "homepage": "https://github.com/oliverklee/tdd-reader",
+    "homepage": "https://github.com/oliverklee-de/tdd-reader",
     "support": {
-        "issues": "https://github.com/oliverklee/anagram-finder/issues",
-        "source": "https://github.com/oliverklee/anagram-finder"
+        "issues": "https://github.com/oliverklee-de/anagram-finder/issues",
+        "source": "https://github.com/oliverklee-de/anagram-finder"
     },
     "require": {
         "php": "~8.3.0 || ~8.4.0"
