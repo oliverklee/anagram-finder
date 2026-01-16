@@ -27,7 +27,7 @@ jobs:
           ini-file: development
           coverage: none
       - name: Run PHP lint
-        run: "composer ci:php:lint"
+        run: "composer check:php:lint"
 
   static-analysis:
     name: Static Analysis
@@ -69,7 +69,7 @@ jobs:
           composer install --no-ansi --no-interaction --no-progress
           composer show
       - name: Run Command
-        run: "composer ci:${{ matrix.command }}"
+        run: "composer check:${{ matrix.command }}"
 
   unit-tests:
     name: Unit tests
@@ -102,7 +102,7 @@ jobs:
           composer install --no-ansi --no-interaction --no-progress
           composer show
       - name: Run tests
-        run: "composer ci:tests:unit"
+        run: "composer check:tests:unit"
 
   functional-tests:
     name: Functional tests
@@ -135,4 +135,4 @@ jobs:
           composer install --no-ansi --no-interaction --no-progress
           composer show
       - name: Run tests
-        run: "composer ci:tests:functional"
+        run: "composer check:tests:functional"
